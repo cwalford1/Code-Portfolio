@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import math
 
 """About this task:
-I want to calculate ∫∫(x+2*y)*(x+y)dydx with bounds of (2,4) for y and (0,1) for x using Monte-Carlo integration.
+I want to calculate ∫∫(x+2*y)*(x+y)dydx with bounds of (2,4) for y and (0,1) for x using Monte-Carlo integration, which is a method of numerically calculating integrals through some manipulation and analysis of randomly generated datasets.
 
 I'm not going to thoroughly explain MC integration here, but we first rewrite the function as f(x,y)=g(x,y)p(x,y), where p(x,y) =(x+y)/7 and g(x,y) = 7(x+2y).
 We need to generate random numbers on p(x,y), and to do this I generate a Markov chain using an algorithm called Metropolis.
