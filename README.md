@@ -7,4 +7,4 @@ Within this directory you'll find a few subdirectories with examples of my code.
 
 
 You'll also find a subdirectory which includes my thoughts, experiences, and experimentation from working through "Introduction to Machine Learning in Python".
-I've been interested in machine learning for a few years and educating myself on subjects like neural networks and genetic algorithms.  Recently I've decided to dive in and write up and experiment with machine learning programs using IMLP as a guide.
+I've been interested in machine learning for a few years and educating myself on subjects like neural networks and genetic algorithms.  Recently I've decided to dive in and write and experiment with machine learning programs using IMLP as a guide.
