@@ -8,13 +8,14 @@ This isn't a particularly practical thing to do, but the goal is that this proje
 particularly the calculus and linear algebra of backpropagation.
 
 Post Notes:
-I made two design choices to simplify the process, and while in hindsight these definitely limited the functionality/accuracy of my networks.  However, this project already stretched how long I wanted to work on it,
-and the added complexity would certaintly have exaserbated this problem.  I don't regret these choices, but they're certainly things I'll fix when I revisit this idea.
+I made a few design choices to simplify the process, and while in hindsight these definitely limited the functionality/accuracy of my networks.  However, this project already stretched how long I wanted to work on it,
+and the added complexity would certaintly have exaserbated this problem.  I don't regret these choices, but they're certainly things I'll change when I revisit this exercise.
 
 First, I decided to make all the intermediate layers have equal number of nodes as this means I only have to adjust the shape of weight matrices for the input and output layer.
 Second, I wrote the network to take single labelled inputs at a time rather than an array of several labelled inputs.  I did this to make it easier to conceptually follow an input through feedforward and backpropagation,
 but this will definitely decrease time efficiency and might reduce accuracy as the cost function landscape is only a single input rather than the sum of several inputs. Most of the calculations are linear so I didn't think this would matter
-(and I'm still not certain if it does) but it's still a limitation.
+(and I'm still not certain if it does) but it's still a limitation. 
+Finally, I did not implement biases in my feedforward process (or perhaps I assumed all biases to be zero).  This was done to lighten the backpropogation calculus as I was doing a lot of it analytically by hand, but limits the potential accuracy of the network.
 
 I plan to make a LaTex write up of the mathematics behind this program as math like analytically solving for expressions for derivatives of weights
 was the majority of the work that went into this project, so check the directory for that."""
